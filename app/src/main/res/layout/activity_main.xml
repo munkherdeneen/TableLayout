@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/versionsTable"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    android:shrinkColumns="*"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/android_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Android Version"/>
+
+    <EditText
+        android:id="@+id/android_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Android Code Name"/>
+
+    <Button
+        android:id="@+id/add_android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"/>
+
+    <TableRow android:padding="5dip">
+        <TextView
+            android:id="@+id/version_column"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pink"
+            android:textStyle="bold"
+            android:text="Version" />
+
+        <TextView
+            android:id="@+id/code_column"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pink"
+            android:textStyle="bold"
+            android:text="Code Name" />
+    </TableRow>
+
+    <TableRow android:padding="5dip">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/pink"
+            android:text="Android 9.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/pink"
+            android:text="Pie" />
+    </TableRow>
+
+    <TableRow android:padding="5dip">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/pink"
+            android:text="Android 8.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/pink"
+            android:text="Oreo" />
+    </TableRow>
+
+</TableLayout>
